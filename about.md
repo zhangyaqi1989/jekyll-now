@@ -8,7 +8,7 @@ Ph.D. student in Mechanical Engineering.
 
 ### More Information
 
-I am working on thermal analysis on additive manufacturing (AM).
+I am working on thermal analysis of additive manufacturing (AM).
 
 ### Contact me
 
