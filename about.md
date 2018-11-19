@@ -4,11 +4,16 @@ title: About
 permalink: /about/
 ---
 
-Ph.D. student in Mechanical Engineering.
+I am a Ph.D. student in Mechanical Engineering at University of
+Wisconsin-Madison. I also have master degree in Computer Science.
 
 ### More Information
 
-I am working on thermal analysis of additive manufacturing (AM).
+My research interests include modeling and simulation of additive manufacturing
+methods, high performance computing (HPC).
+
+I am a fan of Python.
+
 
 ### Contact me
 
