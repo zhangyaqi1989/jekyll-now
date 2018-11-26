@@ -7,7 +7,7 @@ The assignment in Python is different from C/C++, in C/C++,
 the below code means allocate 4 bytes memory on the stack to store
 an integer varaible.
 
-```C
+```c
 int a = 1;
 ```
 
@@ -15,7 +15,7 @@ However everything in Python is an object. The below code in Python
 means create a integer object in memory and label it with a variable
 called a. You can think of a as a pointer which points to the integer object.
 
-```Python
+```python
 a = 1
 ```
 
@@ -27,10 +27,17 @@ If the type is immutatble, like int, float, string, tuple etc. Changing
 a variable will **create a new object** and label it with the variable.
 
 
-```Python
+```python
 a = 1
 a += 1 # create a new integer object with value 2 and label it with variable a
 ```
 
+If the type is mutable, changing a variable will **change the object it points
+to**. Check the below example.
 
-
+```python
+lst = []
+print(id(lst))
+lst.append(1)
+print(id(lst)) # the output is same as the output of second line
+```
