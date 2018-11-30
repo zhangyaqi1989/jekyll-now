@@ -1,0 +1,5 @@
+Below are some tentative topics
+1. Python virtual environment
+2. VIM
+3. Some Python syntax sugar
+4. Competitive programming
