@@ -3,26 +3,32 @@ layout: post
 title: Track USCIS Case with Python
 ---
 
-Recently I starts to refresh my knowledge on deep learning. I have a desktop in the lab which 
-has a GTX 1080 Ti GPU in it. I usually use my laptop to ssh onto it.
-So it would be handy if I can use Jupyter Notebook remotely.
-After googling a while, I found the [solution](https://amber-md.github.io/pytraj/latest/tutorials/remote_jupyter_notebook).
+Recently I am waiting for my OPT application to get approved by USCIS.
+I need a CLI program, which can track USCIS case status and email me once the status changes.
+So I created a small Python [project](https://github.com/zhangyaqi1989/USCIS-Case-Tracker)
 
 
-First of all, log to the remote machine and type below command in the terminal.
+Basic usage is listed as follows
 
-```bash
-jupyter notebook --no-browser --port=8080
-```
-
-Then on your local machine, type below command in the terminal.
+1. check a range of receipt numbers
 
 ```bash
-ssh -N -L localhost:8080:localhost:8080 username@remote_host_name
+python uscis.py -s YSC2090175300 -n 10 -v -r
 ```
 
-Now open your local browser and go to the below address
+The above code checks status of receipt numbers from
+YSC2090175300 to YSC2090175309.
+
+-n is used to set number of receipt numbers tracked.
+
+-v is used to print status of each receipt number to CLI.
+
+-r is used to print pass ratio to CLI.
+
+2. watch one or more receipt numbers and email a message when status changes
 
 ```bash
-localhost:8080
+python watch.py
 ```
+
+You need to put receipt numbers to src/receipts.data (one number per line) and an email address to src/email.data.

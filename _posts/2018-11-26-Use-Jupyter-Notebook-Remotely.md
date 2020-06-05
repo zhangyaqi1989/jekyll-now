@@ -4,7 +4,7 @@ title: Use Jupyter Notebook Remotely
 ---
 
 Recently I starts to refresh my knowledge on deep learning. I have a desktop in the lab which 
-has a GTX 1080 Ti GPU in it. I usually use my laptop to ssh onto it.
+has a powerful GPU in it. I usually use my laptop to ssh onto it.
 So it would be handy if I can use Jupyter Notebook remotely.
 After googling a while, I found the [solution](https://amber-md.github.io/pytraj/latest/tutorials/remote_jupyter_notebook).
 
